@@ -2,8 +2,11 @@
     padding: 81px 0;
     &__inner {
         position: relative;
-        width: 750px;
+        width: 100%;
         margin: 0 auto;
+        img {
+            width: 100%;
+        }
     }
     .slick-prev, .slick-next {
         position: absolute;
@@ -20,5 +23,19 @@
     .slick-next {
         right: -66px;
         left: auto;
+    }
+    .slick-dots {
+        list-style-type: none;
+        justify-content: center;
+        display: flex;
+        li {
+            display: inline-block;
+            margin: 0 3px;
+            button {
+                border-radius: 50px;
+                // background-color: #fff;
+                border: none;
+            }
+        }
     }
 }
